@@ -1,0 +1,8 @@
+<ol>
+<li>Choose a story from the left<br/>
+<li>Continue the story by typing in a new word or voting on one from the list<br/>
+<li>The list of suggested words on the screen is limited so what you typed in might not appear
+unless someone else votes on it too.
+<li>The site is not regulated so you can vote for your own word as many time as you want, but
+that kills the fun aspect of weaving the story line together so please don't do it
+</ol>

@@ -1,0 +1,49 @@
+!!! 5
+html(lang="en")
+	head
+		script(src="/socket.io/socket.io.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js")
+		script(type="text/javascript")
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-24335041-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+	body
+		table
+			tr
+				td
+					img(src="/header.png")
+				td
+					div(id="fb-root")
+					script(src="http://connect.facebook.net/en_US/all.js#xfbml=1")
+					<fb:like href="http://sociowriter.com" width="80" show_faces="false" border_color="" layout="button_count" header="false"></fb:like>
+		table
+			tbody
+				tr
+					td(valign="top", width="150px")
+						div.round
+							strong Stories
+							ul(id="storyList")
+								- each item in ids
+									li
+										a(href="javascript:getArticle('"+item+"')") !{item}
+							br
+							input(id="storyName", type="text")
+							input(id="addButton", type="button", value="Add")
+					td(valign="top", width="75%")
+						div!= body
+						p
+						p
+						div.footer
+							Copyright (C) 2011 <strong><a href="http://zekalogic.com">Zeka Logic Limited</a></strong>
+							br
+							br
+							<a href="http://pigink.com/color/9CE2CB" target="_blank" alt="Social Green"><img src="http://pigink.com/api/getImage/9CE2CB?type=200x75light"></img></a>
+					td(valign="top")
+						b
+

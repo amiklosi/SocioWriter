@@ -1,0 +1,25 @@
+head
+	script(src="/render.js")
+	script(src="/client.js")
+	script
+		var article = !{JSON.stringify(article)};
+		init()
+	link(href="/main.css", media="screen", rel="stylesheet", type="text/css")
+	title SocioWriter
+#debug
+
+#formTemplate
+form(id="textForm",method="post",action="javascript:submitForm()")
+	div.header(id="headerDiv") #{article.id}
+	div.formText
+		label(id="text",for="txt")
+			#{text}
+		input(type="text", name="txt", id="txt", size="20", autofocus, placeholder="write here", pattern="[a-zA-Z\.,\?']+")
+		table(id="candidates")
+		br
+		br
+		br
+		input(type="button", id="newParaButton", value="new paragraph (0)")
+		br
+		br
+		input(type="hidden", id="finishTextButton", value="finish text (0)")

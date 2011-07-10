@@ -1,0 +1,103 @@
+body {
+	background-color: #F7F3F6;
+	color: #003333;
+	font-family: Verdana, Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 10pt;
+}
+
+table,th,td {
+	border-collapse:collapse;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+form {
+	background-color: #b9b982;
+	padding: 0px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+div.header {
+	color: #222222;
+	background-color: #8f8b42;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+div.round {
+	color: #000;
+	background-color: #DBEA85;
+	border: 1px solid black;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+hr {
+	border: 0;
+	width: 100%;
+	color: #333;
+	background-color: #333;
+	height: 1px;
+}
+
+.formText {
+	padding: 5px;
+}
+
+#candidates {
+	width: 100px;
+	position: absolute;
+	color: #000000;
+	background-color: #9E9E9E;
+	border: 1px solid black;
+	padding:5px;
+
+}
+
+#txt {
+	padding-left: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+ol {
+	padding-left: 25px;
+}
+
+a {
+	font-variant: small-caps;
+	text-decoration: none;
+	color: #000;
+}
+
+a:link {
+  /*color: #0000FF;*/
+}
+a:hover {
+	color: #555;
+
+}
+a:active {
+  color: #555;
+}
+
+.item:hover
+{ 
+	background-color:#ffffff;
+	cursor: pointer; cursor: hand;
+}
+
+div.footer {
+	text-align: center;
+	font-size: 9pt;
+	color: #9E9E9E;
+}
