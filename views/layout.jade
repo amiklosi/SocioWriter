@@ -13,7 +13,6 @@ html(lang="en")
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
-		<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'afb22c2c-d2b7-474b-b098-1b4f3728d7fb'});</script>
 	body
 		table
 			tr
@@ -40,11 +39,22 @@ html(lang="en")
 						div!= body
 						p
 						p
+						<!-- AddThis Button BEGIN -->
+						<div class="addthis_toolbox addthis_default_style center" >
+						<a class="addthis_button_facebook"></a>
+						<a class="addthis_button_twitter"></a>
+						<a class="addthis_button_email"></a>
+						<a class="addthis_button_compact"></a>
+						<a class="addthis_counter addthis_bubble_style"></a>
+						</div>
+
 						div.footer
 							Copyright (C) 2011 <strong><a href="http://zekalogic.com">Zeka Logic Limited</a></strong>
 							br
 							br
-							<span  class='st_sharethis' displayText='ShareThis'></span>
+							<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+							<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e1c6d4c5fae53b1"></script>
+							<!-- AddThis Button END -->
 							br
 							br
 							<a href="http://pigink.com/color/9CE2CB" target="_blank" alt="Social Green"><img src="http://pigink.com/api/getImage/9CE2CB?type=200x75light"></img></a>
