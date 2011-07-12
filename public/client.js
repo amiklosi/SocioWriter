@@ -8,6 +8,7 @@ function getArticle(id) {
 			$("#headerDiv").html(res.id);
 			updateCandidateWords();
 			repositionCandidates();
+			$('#newParaButton').val("new paragraph ("+article.finishParagraphCounter+")");
 		});
 }
 
